@@ -4,6 +4,7 @@
     --color-title: hsla(0, 0%, 0%, 1); 
     --color-text: hsla(0, 0%, 40%, 1); 
     --color-cta: hsla(29, 89%, 49%, 1);
+    --color-white: hsla(360, 100%, 100%, 1);
     --ff-text: 'Manrope', sans-serif;
     --fs-avatar: 1.6rem;
     --fs-title: 3.6rem; 
@@ -59,6 +60,84 @@ html {
   p {
     line-height: var(--lh-text);
   }
+
+  /**  Menu **/
+.none {
+  display: none;
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.menu-btn svg {
+  fill: var(--color-black);
+}
+
+.menu {
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 110px;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-nav);
+  color: var(--color-text); 
+  align-items: center;
+  padding-top: 30px;
+  row-gap: 20px;
+}
+
+.nav-button {
+  padding: 14px 24px;
+  background-color: var(--color-cta);
+}
+
+.menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media screen and (min-width: 43.688rem) {
+  .menu-btn {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    opacity: 1;
+    pointer-events: auto;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 24px;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    column-gap: 2.4rem;
+    padding: 0;
+  }
+
+  .text-lg-left {
+    text-align: left;
+  }
+}
 
   /***** Site Styles *****/
 .wrapper {

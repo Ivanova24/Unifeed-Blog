@@ -22,46 +22,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
   
 </head>
 <body>
     <header class="header wrapper">
-        <a class="hamburger" href="#navbar" aria-label="Open main menu">
-            <span class="sr-only">Open main menu</span>
+        <a href="#"><img src="/Assets/logo.svg" alt="Home Unifeed"></a>
+        <button class="menu-btn">
             <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
-          </svg>
-        </a>
-        <img src="/Assets/logo.svg" alt="logo Unifeed">
-        <nav class="nav">
-            <ul role="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Subscribe</a></li>
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+            </svg>
+            <svg
+              class="none"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+              />
+            </svg>
+        </button>
+        <nav class="menu">
+            <ul class="nav-links" role="list">
+                <li class="nav-links"><a href="#">Home</a></li>
+                <li class="nav-links"><a href="#">Features</a></li>
+                <li class="nav-links"><a href="#">Pricing</a></li>
+                <li class="nav-button"><a href="#">Subscribe</a></li>
             </ul>
         </nav>
-        <a class="close" href="#" aria-label="Close main menu">
-            <span class="sr-only">Close main menu</span>
-            <svg
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
-            />
-          </svg>
-          </a>
+        
     </header>
+
+    
     <main class="container">
         <article class="main-card">
             <!-- <img src="/Assets/main-art" alt="" width="392" height="266"> -->
