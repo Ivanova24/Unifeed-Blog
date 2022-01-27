@@ -2,9 +2,10 @@
 :root {
     --wrapper: max(2rem, 15.3vw - 18rem / 2);
     --color-title: hsla(0, 0%, 0%, 1); 
-    --color-text: hsla(0, 0%, 40%, 1); 
+    --color-text: hsla(0, 0%, 35%, 1); 
     --color-cta: hsla(29, 89%, 49%, 1);
     --color-white: hsla(360, 100%, 100%, 1);
+    --color-black: hsla(0, 0%, 2%, 1);
     --ff-text: 'Manrope', sans-serif;
     --fs-avatar: 1.6rem;
     --fs-title: 3.6rem; 
@@ -56,11 +57,21 @@ html {
   a:hover {
     text-decoration: underline;
   }
+
+  h1 {
+    line-height: var(--lh-title-big);
+  }
+
+  h2 {
+    line-height: var(--lh-title);
+  }
   
   p {
     line-height: var(--lh-text);
+    color: var(--color-text);
   }
 
+/***** Components *****/
   /**  Menu **/
 .none {
   display: none;
@@ -100,8 +111,12 @@ html {
   row-gap: 20px;
 }
 
-.nav-button {
+.button-cta {
+  cursor: pointer;
+  font-weight: 700;
   padding: 14px 24px;
+  border-radius: 5px;
+  color: var(--color-black);
   background-color: var(--color-cta);
 }
 
@@ -139,10 +154,75 @@ html {
   }
 }
 
-  /***** Site Styles *****/
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 4rem var(--wrapper) 4.2rem;
+     /***** avatar *****/
+.autor {
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
 }
 
+.autor__avatar {
+  width: 62px;
+  height: 62px;
+}
+
+.autor__description p{
+  font-size: var(--fs-avatar);
+}
+
+/***** Utilities *****/
+.wrapper {
+  padding: 0 var(--wrapper) 0;
+}
+
+  /***** Site Styles *****/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4.2rem;
+}
+
+.card {
+  margin-bottom: 5rem;
+ }
+
+.main-card__img {
+  background-image: url(/Assets/main-art.png);
+  height: 26.6rem;
+}
+
+.card__img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3.2rem;
+  width: 100%;
+}
+
+.card-1{
+  background-image: url(/Assets/art1.png);
+}
+
+.card-2{
+  background-image: url(/Assets/art2.png);
+}
+
+.card-3 {
+  background-image: url(/Assets/art2.png);
+}
+
+.card-height {
+  height: 202px;
+}
+
+.card__content {
+  display: grid;
+  row-gap: 1.6rem;
+}
+
+.card__content h1,
+.card__content h2 {
+  font-size: var(--fs-title);
+  font-weight: 700;
+}
