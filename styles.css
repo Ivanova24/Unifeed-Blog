@@ -14,6 +14,7 @@
     --lh-title-big: 1.3;  
     --lh-text: 1.8; 
     --lh-title: 1.4; 
+    --lh-avatar: 2; 
 }
 
 /***** Reset *****/
@@ -225,4 +226,23 @@ html {
 .card__content h2 {
   font-size: var(--fs-title);
   font-weight: 700;
+}
+
+.autor__description p {
+  line-height: var(--lh-avatar);
+}
+
+.autor__description p:first-of-type {
+  font-weight: 700;
+  color: var(--color-title);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+}
+
+.copy {
+  font-size: var(--fs-avatar);
 }
