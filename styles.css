@@ -181,25 +181,42 @@ html {
   display: flex;
   justify-content: space-between;
   padding-top: 4rem;
-  padding-bottom: 4.2rem;
+  padding-bottom: clamp(4.2rem, calc(4.2rem + (6.8 - 4.2) * ((100vw - 37rem) / (114 - 37))), 6.8rem);
 }
 
-.card {
+.main {
+  padding-bottom: clamp(5rem, calc(5rem + (10 - 5) * ((100vw - 37rem) / (114 - 37))), 10rem);
+}
+
+.main-card {
   margin-bottom: 5rem;
- }
+}
 
 .main-card__img {
   background-image: url(/Assets/main-art.png);
-  height: 26.6rem;
+  min-height: 26.6rem;
 }
 
 .card__img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
   border-radius: 5px;
   width: 100%;
+}
+
+.list-card {
+  display: grid;
+  row-gap: 5rem;
+  align-items: start;
+}
+
+.card-content {
+  display: flex;
+  row-gap: 3.2rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-1{
@@ -260,11 +277,20 @@ html {
   .main-card {
     display: flex;
     column-gap: 70px;
+    margin-bottom: 13rem; 
   }
 
   .main-card__img {
     max-width: 39.2rem;
     margin-bottom: 0;
-    height: auto;
+  }
+
+  .list-card{
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-content {
+    margin-bottom: 0;
   }
 }
