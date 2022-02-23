@@ -4,6 +4,7 @@
     --color-title: hsla(0, 0%, 0%, 1); 
     --color-text: hsla(0, 0%, 35%, 1); 
     --color-cta: hsla(29, 89%, 49%, 1);
+    --color-text-hover: hsl(29deg 90% 34%); 
     --color-white: hsla(360, 100%, 100%, 1);
     --color-black: hsla(0, 0%, 2%, 1);
     --ff-text: 'Manrope', sans-serif;
@@ -121,6 +122,12 @@ html {
   background-color: var(--color-cta);
 }
 
+.button-cta:hover {
+  background-color: var(--color-white);
+  color: var(--color-text-hover);
+  outline: 2px solid var(--color-text-hover);
+}
+
 .menu.is-active {
   opacity: 1;
   pointer-events: auto;
@@ -177,6 +184,28 @@ html {
 }
 
   /***** Site Styles *****/
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.link-card:hover {
+  text-decoration: none;
+  box-shadow:
+  2.8px 2.8px 3.5px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 8.5px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 16px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 28.6px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 53.5px rgba(0, 0, 0, 0.05),
+  100px 100px 128px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 650ms ease;
+}
+
+.link-card:hover .change-color {
+  color: var(--color-text-hover);
+  transition: color 650ms ease;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -189,6 +218,9 @@ html {
 }
 
 .main-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
   margin-bottom: 5rem;
 }
 
@@ -201,7 +233,6 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin-bottom: 3.2rem; */
   border-radius: 5px;
   width: 100%;
 }
@@ -275,7 +306,7 @@ html {
 
 @media screen and (min-width: 62.438rem){
   .main-card {
-    display: flex;
+    flex-direction: row;
     column-gap: 70px;
     margin-bottom: 13rem; 
   }

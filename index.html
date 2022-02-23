@@ -1,138 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Unifeed Blog</title>
-    <meta name="description" content="Weekly newsletter written by specialists in technology, marketing and SEO.">
-  
-    <meta property="og:title" content="Unifeed Blog">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-    <meta property="og:description" content="Weekly newsletter written by specialists in technology, marketing and SEO.">
-    <meta property="og:image" content="image.png">
-  
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta
+      name="description"
+      content="Weekly newsletter written by specialists in technology, marketing and SEO."
+    />
+
+    <meta property="og:title" content="Unifeed Blog" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.sitepoint.com/a-basic-html5-template/"
+    />
+    <meta
+      property="og:description"
+      content="Weekly newsletter written by specialists in technology, marketing and SEO."
+    />
+    <meta property="og:image" content="image.png" />
+
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="index.js"></script>
-  
-</head>
-<body>
-    <header class="header wrapper">
-        <a href="#"><img src="/Assets/logo.svg" alt="Home Unifeed"></a>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header wrapper">
+        <a href="#"><img src="/Assets/logo.svg" alt="Home Unifeed" /></a>
         <button class="menu-btn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
-            </svg>
-            <svg
-              class="none"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
-              />
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+          </svg>
+          <svg
+            class="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+            />
+          </svg>
         </button>
         <nav class="menu">
-            <ul class="nav-links" role="list">
-                <li class="nav-links"><a href="#">Home</a></li>
-                <li class="nav-links"><a href="#">Features</a></li>
-                <li class="nav-links"><a href="#">Pricing</a></li>
-                <button class="button-cta" href="#">Subscribe</button>
-            </ul>
+          <ul class="nav-links" role="list">
+            <li class="nav-links"><a href="#">Home</a></li>
+            <li class="nav-links"><a href="#">Features</a></li>
+            <li class="nav-links"><a href="#">Pricing</a></li>
+            <button class="button-cta" href="#">Subscribe</button>
+          </ul>
         </nav>
-        
-    </header>
+      </header>
 
-    <main class="main wrapper">
-        <article class="main-card card">
-            <div class="main-card__img card__img"></div>
-            <div class="card__content">
-                <a href="#"><h1>Weekly Newsletter: Tweets for Higher Engagements</h1></a>
-                <p>In this weekly newsletter, we will be covering ten types of engaging tweets. This is the guide if you’re just starting out on Twitter.</p>
+      <main class="main wrapper">
+        <article>
+          <a href="#" class="link-card main-card">
+              <div class="main-card__img card__img"></div>
+              <div class="card__content">
+                <h1 class="change-color">Weekly Newsletter: Tweets for Higher Engagements</h1>
+                <p>
+                  In this weekly newsletter, we will be covering ten types of
+                  engaging tweets. This is the guide if you’re just starting out on
+                  Twitter.
+                </p>
                 <div class="autor">
-                    <div class="autor__avatar">
-                        <img src="/Assets/user-avatar.png" alt="">
-                    </div>
-                    <div class="autor__description">
-                        <p><small>Jessica Andrews</small></p>
-                        <p><small>Content Manager</small></p>
-                    </div>
+                  <div class="autor__avatar">
+                    <img src="/Assets/user-avatar.png" alt="" />
+                  </div>
+                  <div class="autor__description">
+                    <p><small>Jessica Andrews</small></p>
+                    <p><small>Content Manager</small></p>
+                  </div>
                 </div>
-            </div>
+              </div>
+          </a>
         </article>
 
         <div class="list-card">
-            <article class="card-content card">
+          <article>
+            <a href="#" class="card-content link-card">
                 <div class="card__img card-1 card-height"></div>
                 <div class="card__content">
-                    <h2>7 Tips for Organic Traffic</h2>
-                    <p>From SEO to integrating with Paid Advertising, this article covers it all.</p>
-                    <div class="autor">
-                        <div class="autor__avatar">
-                            <img src="/Assets/user-avatar-1.png" alt="">
-                        </div>
-                        <div class="autor__description">
-                            <p><small>Spencer David</small></p>
-                            <p><small>SEO Specialist</small></p>
-                        </div>
+                  <h2 class="change-color">7 Tips for Organic Traffic</h2>
+                  <p>
+                    From SEO to integrating with Paid Advertising, this article
+                    covers it all.
+                  </p>
+                  <div class="autor">
+                    <div class="autor__avatar">
+                      <img src="/Assets/user-avatar-1.png" alt="" />
                     </div>
+                    <div class="autor__description">
+                      <p><small>Spencer David</small></p>
+                      <p><small>SEO Specialist</small></p>
+                    </div>
+                  </div>
                 </div>
-            </article>
-            <article class="card-content card">
+            </a>
+          </article>
+          <article>
+            <a href="#" class="card-content link-card">
                 <div class="card__img card-2 card-height"></div>
                 <div class="card__content">
-                    <h2>How To Start Your Own Business</h2>
-                    <p>Starting your own business in 2021 has never been easier.</p>
-                    <div class="autor">
-                        <div class="autor__avatar">
-                            <img src="/Assets/user-avatar-2.png" alt="">
-                        </div>
-                        <div class="autor__description">
-                            <p><small>Sara Frey</small></p>
-                            <p><small>Business Leader</small></p>
-                        </div>
+                  <h2 class="change-color">How To Start Your Own Business</h2>
+                  <p>Starting your own business in 2021 has never been easier.</p>
+                  <div class="autor">
+                    <div class="autor__avatar">
+                      <img src="/Assets/user-avatar-2.png" alt="" />
                     </div>
+                    <div class="autor__description">
+                      <p><small>Sara Frey</small></p>
+                      <p><small>Business Leader</small></p>
+                    </div>
+                  </div>
                 </div>
-            </article>
-            <article class="card-content card">
+            </a>
+          </article>
+          <article>
+            <a href="#" class="card-content link-card">
                 <div class="card__img card-3 card-height"></div>
                 <div class="card__content">
-                    <h2>5 Tips for Better Branding</h2>
-                    <p>From SEO to integrating with Paid Advertising, this article covers it all.</p>
-                    <div class="autor">
-                        <div class="autor__avatar">
-                            <img src="/Assets/user-avatar-3.png" alt="">
-                        </div>
-                        <div class="autor__description">
-                            <p><small>David Suns</small></p>
-                            <p><small>Brand Manager</small></p>
-                        </div>
+                  <h2 class="change-color">5 Tips for Better Branding</h2>
+                  <p>
+                    From SEO to integrating with Paid Advertising, this article
+                    covers it all.
+                  </p>
+                  <div class="autor">
+                    <div class="autor__avatar">
+                      <img src="/Assets/user-avatar-3.png" alt="" />
                     </div>
+                    <div class="autor__description">
+                      <p><small>David Suns</small></p>
+                      <p><small>Brand Manager</small></p>
+                    </div>
+                  </div>
                 </div>
-            </article>
+            </a>
+          </article>
         </div>
-    </main>
+      </main>
 
-    <footer class="footer wrapper">
-        <a href="#"><img src="/Assets/logo.svg" alt="Home Unifeed"></a>
-        <p class="copy"><small>Unifeed © 2017 All Copyrights Not Reserved</small></p>
-    </footer>
-</body>
+      <footer class="footer wrapper">
+        <a href="#"><img src="/Assets/logo.svg" alt="Home Unifeed" /></a>
+        <p class="copy">
+          <small>Unifeed © 2017 All Copyrights Not Reserved</small>
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
